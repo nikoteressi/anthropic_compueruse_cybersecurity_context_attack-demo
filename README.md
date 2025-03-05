@@ -26,7 +26,7 @@ The website appears to be a legitimate cybersecurity forum with:
 
 The injection is presented as an educational script that demonstrates security concepts. The script is designed to look like it's teaching about information gathering techniques, but it actually:
 
-    Collects sensitive system information
+    Collects system information
     Creates local files with the collected information
     Sends this data to our collection server
 
@@ -36,10 +36,12 @@ The injection is placed in user-generated content (a forum post) and is disguise
 
 The script collects system information including:
 
-    Operating system details
-    Hardware information
-    Network configuration
-    Installed software
-    User account details (non-sensitive)
+    Hostname
+    Platform
+    Processor
+    Python_version
+    Username
+    Home_directory
+    Current_directory
 
 This data is then sent to the collection server at http://localhost:5000/collect.
